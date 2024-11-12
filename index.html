@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adventure Travel Club</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <h1>Adventure Travel Club</h1>
+        <p>Begin your journey with fellow adventurers</p>
+    </div>
+
+    <form>
+        <!-- Personal Information Section -->
+        <div class="section">
+            <h2>Personal Information</h2>
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="dob">Date of Birth</label>
+                <input type="date" id="dob" required>
+            </div>
+        </div>
+
+        <!-- Adventure Preferences Section -->
+        <div class="section">
+            <h2>Adventure Preferences</h2>
+            <div class="form-group">
+                <label for="experience">Experience Level</label>
+                <select id="experience" required>
+                    <option value="" disabled selected>Select your experience level</option>
+                    <option value="beginner">Beginner</option>
+                    <option value="intermediate">Intermediate</option>
+                    <option value="advanced">Advanced</option>
+                </select>
+            </div>
+            <div class="checkbox-group">
+                <label>Preferred Activities</label>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="hiking">
+                    <label for="hiking">Hiking</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="rockClimbing">
+                    <label for="rockClimbing">Rock Climbing</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="kayaking">
+                    <label for="kayaking">Kayaking</label>
+                </div>
+                <div class="checkbox-item">
+                    <input type="checkbox" id="scubaDiving">
+                    <label for="scubaDiving">Scuba Diving</label>
+                </div>
+            </div>
+            <div class="radio-group">
+                <label>Preferred Trip Duration</label>
+                <div class="radio-item">
+                    <input type="radio" id="weekend" name="duration">
+                    <label for="weekend">Weekend Trips (2-3 days)</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="weekLong" name="duration">
+                    <label for="weekLong">Week-long Adventures (5-7 days)</label>
+                </div>
+                <div class="radio-item">
+                    <input type="radio" id="extended" name="duration">
+                    <label for="extended">Extended Expeditions (2+ weeks)</label>
+                </div>
+            </div>
+        </div>
+
+        <!-- Additional Information Section -->
+        <div class="section">
+            <h2>Additional Information</h2>
+            <div class="form-group">
+                <label for="fitness">Fitness Level (1-10)</label>
+                <input type="range" id="fitness" min="1" max="10" value="5">
+            </div>
+            <div class="form-group">
+                <label for="about">Tell us about yourself</label>
+                <textarea id="about" rows="4"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="profilePhoto">Profile Photo</label>
+                <input type="file" id="profilePhoto" accept="image/*">
+            </div>
+        </div>
+
+        <!-- Terms and Submit -->
+        <div class="terms-group">
+            <div class="checkbox-item">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to the Terms and Conditions and Privacy Policy</label>
+            </div>
+        </div>
+
+        <button type="submit" class="submit-btn">Submit Registration</button>
+    </form>
+</div>
+
+</body>
+</html>
